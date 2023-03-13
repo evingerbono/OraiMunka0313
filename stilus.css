@@ -1,0 +1,9 @@
+form{
+    padding: 10px;
+    margin: 2px;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+input{
+    max-width: 30%;
+}
