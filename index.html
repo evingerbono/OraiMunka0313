@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evinger Bono</title>
     <link rel="stylesheet" href="stilus.css">
-    <script src="main.js"></script>
+    <script src="valid.js"></script>
 </head>
 
 <body>
     <form name="validTeszt" method="get" action="#" onsubmit="return validateForm()">
         <label for="vnev">Vezeték Név:</label>
-        <input type="text" id="vnev" name="vnev">
+        <input type="text" id="vnev" name="vnev" pattern="[A-Z][A-Za-z ]{3}" required>
         <label for="knev">Kereszt Név:</label>
-        <input type="text" id="knev" name="knev">
+        <input type="text" id="knev" name="knev" pattern="[A-Z][A-Za-z ]{3}" required>
         <label for="jelszo1">Jelszó:</label>
         <input type="password" id="jelszo1" name="jelszo1">
         <label for="jelszo2">Jelszó Újra:</label>
