@@ -13,13 +13,13 @@
 <body>
     <form name="validTeszt" method="get" action="#" onsubmit="return validateForm()">
         <label for="vnev">Vezeték Név:</label>
-        <input type="text" id="vnev" name="vnev" pattern="[A-Z][A-Za-z ]{3}" required>
+        <input type="text" id="vnev" name="vnev" pattern="[A-Z][A-Za-z ]{2,}" required>
         <label for="knev">Kereszt Név:</label>
-        <input type="text" id="knev" name="knev" pattern="[A-Z][A-Za-z ]{3}" required>
+        <input type="text" id="knev" name="knev" pattern="[A-Z][A-Za-z ]{2,}" required>
         <label for="jelszo1">Jelszó:</label>
-        <input type="password" id="jelszo1" name="jelszo1">
+        <input type="password" id="jelszo1" name="jelszo1" pattern="(?=.*\d)(?=.*[!@#$%^&*])([A-Z][A-Za-z\d!@#$%^&*]{2,})" required>
         <label for="jelszo2">Jelszó Újra:</label>
-        <input type="password" id="jelszo2" name="jelszo2">
+        <input type="password" id="jelszo2" name="jelszo2" pattern="(?=.*\d)(?=.*[!@#$%^&*])([A-Z][A-Za-z\d!@#$%^&*]{2,})" required>
         <input type="submit" name="kuldes" id="kuldes" value="Küldés">
 
     </form>
